@@ -27,12 +27,12 @@ modules:
     build-result: resources
     requires:
     - artifacts:
-      - project1.zip
-      name: project1
+      - sapui5.zip
+      name: sapui5
       target-path: resources/
-- name: project1
+- name: sapui5
   type: html5
-  path: project1
+  path: sapui5
   build-parameters:
     build-result: dist
     builder: custom

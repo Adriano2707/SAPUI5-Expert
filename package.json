@@ -1,11 +1,11 @@
 {
-  "name": "project1",
+  "name": "logaligroup.sapui5",
   "version": "0.0.1",
   "description": "An SAP Fiori application.",
   "keywords": [
     "ui5",
     "openui5",
-    "sapui5"
+    "logaligroup.sapui5"
   ],
   "main": "webapp/index.html",
   "dependencies": {},
@@ -17,8 +17,8 @@
     "mbt": "^1.2.27"
   },
   "scripts": {
-    "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#project1-display\"",
-    "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#project1-display\"",
+    "start": "fiori run --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#logaligroup.sapui5-display\"",
+    "start-local": "fiori run --config ./ui5-local.yaml --open \"test/flpSandbox.html?sap-ui-xx-viewCache=false#logaligroup.sapui5-display\"",
     "build": "ui5 build --config=ui5.yaml --clean-dest --dest dist",
     "deploy": "fiori verify",
     "deploy-config": "fiori add deploy-config",
