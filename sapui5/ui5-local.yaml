@@ -5,7 +5,7 @@ metadata:
   name: sapui5
 type: application
 framework:
-  name: SAPUI5
+  name: sapui5
   version: 1.128.1
   libraries:
     - name: sap.m
@@ -32,5 +32,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: project1
+        component: sapui5
         ui5Theme: sap_horizon
