@@ -1,0 +1,14 @@
+{
+    "name": "logaligroup.sapui5",
+    "version": "1.0.0",
+    "description": "Invoices - LogaliGroup SAPUI5",
+    "scripts": {
+        "start": "ui5 serve -o index.html"
+    },
+    "devDependencies": {
+        "@ui5/cli": "^4.0.8"
+    },
+    "dependencies": {
+        "@sap/ux-ui5-tooling": "^1.15.0"
+    }
+}

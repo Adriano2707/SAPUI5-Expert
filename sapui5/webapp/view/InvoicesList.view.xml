@@ -1,4 +1,4 @@
-<mvc:View controllerName="logaligroup.SAPUI5.controller.InvoicesList" 
+<mvc:View controllerName="logaligroup.sapui5.controller.InvoicesList" 
              xmlns="sap.m"
              xmlns:mvc="sap.ui.core.mvc">
     <List id="InvoiceList" 

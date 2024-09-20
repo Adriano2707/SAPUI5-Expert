@@ -1,7 +1,7 @@
 {
     "_version": "1.12.0",
     "sap.app": {
-        "id": "logaligroup.SAPUI5",
+        "id": "logaligroup.sapui5",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -67,7 +67,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "logaligroup.SAPUI5.i18n.i18n"
+                    "bundleName": "logaligroup.sapui5.i18n.i18n"
                 }
             },
             "invoices": {
@@ -99,7 +99,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "logaligroup.SAPUI5.view",
+                "viewPath": "logaligroup.sapui5.view",
                 "controlAggregation": "pages",
                 "controlId": "app",
                 "clearControlAggregation": false
@@ -124,7 +124,7 @@
             }
         },
         "rootView": {
-            "viewName": "logaligroup.SAPUI5.view.App",
+            "viewName": "logaligroup.sapui5.view.App",
             "type": "XML",
             "async": true,
             "id": "App"

@@ -16,7 +16,7 @@ sap.ui.define([
      */
     function (Controller, JSONModel, InvoicesFormatter, Filter, FilterOperator) { 
 
-        return Controller.extend("logaligroup.SAPUI5.controller.InvoicesList", {
+        return Controller.extend("logaligroup.sapui5.controller.InvoicesList", {
 
             formatter: InvoicesFormatter,
 
@@ -47,3 +47,4 @@ sap.ui.define([
         });
 
     });
+    

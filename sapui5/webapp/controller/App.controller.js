@@ -10,7 +10,7 @@ sap.ui.define([
     function(Controller) {
             "use strict";
    
-        return Controller.extend("logaligroup.SAPUI5.controller.App", {
+        return Controller.extend("logaligroup.sapui5.controller.App", {
 
            onInit: function(){
 
@@ -21,6 +21,6 @@ sap.ui.define([
            }
         });
 
-    }); 
+    });
 
 

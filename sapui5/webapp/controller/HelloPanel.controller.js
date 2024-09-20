@@ -11,7 +11,7 @@ sap.ui.define([
     function (Controller, MessageToast) {
         "use strict";
 
-        return Controller.extend("logaligroup.SAPUI5.controller.HelloPanel", {
+        return Controller.extend("logaligroup.sapui5.controller.HelloPanel", {
 
             onInit: function () {
 

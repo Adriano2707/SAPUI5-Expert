@@ -11,7 +11,7 @@ sap.ui.define([
     function (ManagedObject, Fragment) {
         "use strict";
 
-        return ManagedObject.extend("logaligroup.SAPUI5.controller.HelloDialog", {
+        return ManagedObject.extend("logaligroup.sapui5.controller.HelloDialog", {
 
             constructor: function (oView) {
                 this._oView = oView;
@@ -37,7 +37,7 @@ sap.ui.define([
                     //load asynctonous XML fragment
                     Fragment.load({
                         id: oView.getId(),
-                        name: "logaligroup.SAPUI5.view.HelloDialog",
+                        name: "logaligroup.sapui5.view.HelloDialog",
                         controller: oFragmentController
                     }).then(function (oDialog) {
                         oView.addDependent(oDialog);
