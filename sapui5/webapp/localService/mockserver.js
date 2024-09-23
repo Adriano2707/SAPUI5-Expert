@@ -39,8 +39,8 @@ sap.ui.define([
 
                         //parse manifest for local metadata URI
                         var sJsonFilesUrl = sap.ui.require.toUrl(_sJsonFilesPath);
-                        var oMainDataSource = oManifestModel.getProperty("/sap.app/dataSources/mainService");
-                        var sMetadataUrl = sap.ui.require.toUrl(_sAppPath + oMainDataSource.settings,localUri);
+                        var oMainDataSource = oManifestModel.getProperty("/sap.app/dataSources/northwind");
+                        var sMetadataUrl = sap.ui.require.toUrl(_sAppPath + oMainDataSource.settings.localUri);
                         
                         //ensure there is a  trailing slash
                         var sMockServerUrl = oMainDataSource.uri && new URI(oMainDataSource.uri).absoluteTo(sap.ui.require.toUrl(_sAppPath)).toString();
@@ -63,7 +63,7 @@ sap.ui.define([
                         //simulate all requests using mock data
                         oMockServer.simulate(sMetadataUrl,{
                             sMockdataBaseUrl : sJsonFilesUrl,
-                            bgenerateMissingMockData : true
+                            bGenerateMissingMockData : true
                         });
 
                         var aRequests = oMockServer.getRequests();
@@ -71,11 +71,11 @@ sap.ui.define([
                         // compose an error response for each request
                         var fnResponse = function (iErrCode, sMessage, aRequest){
                             aRequest.response = function(oXhr){
-                                oXhr.respond(iErrCode,{"content-Type" : "text/plain;charset=utf-8",sMessage});
+                                oXhr.respond(iErrCode,{"Content-Type" : "text/plain;charset=utf-8",sMessage});
                             };
                         };
                         // simulate metadata errors
-                        if(oOptions.metadataError || oUriParameters.get("metadataError")){
+                        if(oOptions.metadataError || oUriparameters.get("metadataError")){
                             aRequests.forEach(function (aEntry) { 
                                 if(aEntry.path.toString().indexof("$metadata") > -1){
                                     fnResponse(500, "metadata Error", aEntry); 

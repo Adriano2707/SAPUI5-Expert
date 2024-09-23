@@ -15,7 +15,7 @@ sap.ui.define([
 
             beforeEach: function(){
                 this._oResourceModel = new ResourceModel({
-                    bundleUrl : sap.ui.require.toUrl("logaligroup/sapui5") + "i18/i18n.properties"
+                    bundleUrl : sap.ui.require.toUrl("logaligroup/sapui5") + "/i18n/i18n.properties"
                 });
             },
 
@@ -24,7 +24,7 @@ sap.ui.define([
             }
         });
 
-        QUnit.test("Should return the Invoice Status" , function(aasert){
+        QUnit.test("Should return the Invoice Status" , function(assert){
             let oModel = this.stub();
 
             oModel.withArgs("i18n").returns(this._oResourceModel);

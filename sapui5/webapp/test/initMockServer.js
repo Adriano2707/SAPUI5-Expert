@@ -1,6 +1,6 @@
 //@ts-nocheck
 sap.ui.define([
-    "../localService/mockServer",
+    "../localService/mockserver",
     "sap/m/MessageBox"
 ],
 /**
@@ -13,7 +13,7 @@ function (mockServer, MessageBox) {
         var aMokservers = [];
 
         //initialize the mock server 
-        aMockservers.push(mockServer.init());
+        aMokservers.push(mockServer.init());
 
 
         Promise.all(aMokservers).catch(function (oError) {
