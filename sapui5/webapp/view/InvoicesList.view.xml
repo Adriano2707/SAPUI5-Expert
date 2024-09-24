@@ -28,12 +28,9 @@
                                  showMeasure : false 
                                   }}"
                         numberUnit="{currency>/usd}" 
-                        numberState="{= ${invoices>ExtendedPrice} > 50 ? 'Success' : 'Error'}">   
-
-              <firstStatus>
-                  <ObjectStatus text="{path:'invoices>Status',
-                                       formatter :'.formatter.invoiceStatus'}"></ObjectStatus>    
-              </firstStatus>
+                        numberState="{= ${invoices>ExtendedPrice} > 50 ? 'Success' : 'Error'}"
+                        type="Navigation"
+                        press="navigateToDetails">  
         </ObjectListItem>
         </items>
     </List> 

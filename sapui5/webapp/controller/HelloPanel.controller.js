@@ -31,7 +31,7 @@ sap.ui.define([
                 this.getOwnerComponent().openHelloDialog();
             }
 
-          
+
 
         });
 

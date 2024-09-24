@@ -23,7 +23,7 @@ sap.ui.define([
 
             open: function () {
                 const oView = this._oView;
-                
+
                 //create dialog lazily
 
                 if (!oView.byId("helloDialog")) {
@@ -46,6 +46,6 @@ sap.ui.define([
                 } else {
                     oView.byId("helloDialog").open();
                 }
-            } 
+            }
         });
     });

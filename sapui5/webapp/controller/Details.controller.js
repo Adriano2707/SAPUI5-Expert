@@ -10,17 +10,12 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("logaligroup.sapui5.controller.App", {
+        return Controller.extend("logaligroup.sapui5.controller.Details", {
 
             onInit: function () {
 
-            },
-
-            onpenDialogHeader: function () {
-                this.getOwnerComponent().openHelloDialog();
             }
+            
         });
 
     });
-
-

@@ -84,30 +84,30 @@
       }
     },
     {
-        "name": "Run Integration Test Invoices-sapui5",
-        "cwd": "${workspaceFolder}/sapui5",
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "type": "node",
-        "request": "launch",
-        "runtimeExecutable": "npx",
-        "args": [
-            "--open",
-            "test/Integration/opaTests.qunit.html"
-        ],
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-6/sapui5\"}",
-            "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"Northwind\",\"url\":\"https://services.odata.org/\",\"path\":\"/V2\"}]",
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
-        }
+      "name": "Run Integration Test Invoices-sapui5",
+      "cwd": "${workspaceFolder}/sapui5",
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "args": [
+        "--open",
+        "test/Integration/opaTests.qunit.html"
+      ],
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-6/sapui5\"}",
+        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"Northwind\",\"url\":\"https://services.odata.org/\",\"path\":\"/V2\"}]",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
+      }
     }
   ],
   "compounds": [],
