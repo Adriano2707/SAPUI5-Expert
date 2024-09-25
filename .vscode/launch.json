@@ -15,7 +15,7 @@
       ],
       "args": [
         "--open",
-        "test/flpSandbox.html#app-tile"
+        "test/flpSandbox.html"
       ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
@@ -24,7 +24,7 @@
       "env": {
         "DEBUG": "--inspect",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert/sapui5\"}"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-5/sapui5\"}"
       }
     },
     {
@@ -53,7 +53,7 @@
       "outputCapture": "std",
       "env": {
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-6/sapui5\"}",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-5/sapui5\"}",
         "FIORI_TOOLS_BACKEND_CONFIG": "[{\"path\":\"/V2\",\"url\":\"https://services.odata.org/\",\"destination\":\"Northwind\"}]"
       }
     },
@@ -78,7 +78,7 @@
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
       "env": {
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-6/sapui5\"}",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-5/sapui5\"}",
         "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"Northwind\",\"url\":\"https://services.odata.org/\",\"path\":\"/V2\"}]",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
       }
@@ -104,7 +104,7 @@
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
       "env": {
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-6/sapui5\"}",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/SAPUI5-Expert-5/sapui5\"}",
         "FIORI_TOOLS_BACKEND_CONFIG": "[{\"destination\":\"Northwind\",\"url\":\"https://services.odata.org/\",\"path\":\"/V2\"}]",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false"
       }
