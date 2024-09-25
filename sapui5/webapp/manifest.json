@@ -74,7 +74,7 @@
                 "type": "sap.ui.model.json.JSONModel",
                 "uri": "Invoices.json"
             },
-            "": {
+            "northwind": {
                 "preload": true,
                 "dataSource": "northwind",
                 "settings": {
@@ -114,12 +114,11 @@
                 },
                 {
                     "name": "Details",
-                    "pattern": "details/{invoicePath",
+                    "pattern": "details/{invoicePath}",
                     "target": [
-                        "TargetDetails"
-                    ]
-                    
-                }
+                         "TargetDetails"
+                ]
+            }
             ],
             "targets": {
                 "TargetOverview": {
@@ -128,22 +127,21 @@
                     "clearControlAggregation": false,
                     "viewId": "Overview",
                     "viewName": "Overview"
+                },
+                "TargetDetails": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "Details",
+                    "viewName": "Details"
                 }
+            },
+            "rootView": {
+                "viewName": "logaligroup.sapui5.view.App",
+                "type": "XML",
+                "async": true,
+                "id": "App"
             }
-        },
-        "rootView": {
-            "viewName": "logaligroup.sapui5.view.App",
-            "type": "XML",
-            "async": true,
-            "id": "App"
-        },
-        "TargetDetails": {
-            "viewType": "XML",
-            "transition": "slide",
-            "clearControlAggregation": false,
-            "viewId": "Details",
-            "viewName": "Details"
-
         }
     }
 }

@@ -3,8 +3,8 @@
        xmlns:mvc="sap.ui.core.mvc"
        xmlns:core="sap.ui.core"
        displayBlock="true">
-     <Page title="{i18n>detailsPageTitle}" >
-     <ObjectHeader title="Invoice">
+     <Page title="{i18n>detailsPageTitle}" showNavButton="true" navButtonPress=".onNavBack" >
+     <ObjectHeader title= "{northwind>Quantity} x {northwind>ProductName}">
           <attributes>
               <ObjectAttribute text="{northwind>ShipName}"/>
               <ObjectAttribute text="{northwind>ShipAddress}"/>
