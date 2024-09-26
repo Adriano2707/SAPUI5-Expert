@@ -14,7 +14,7 @@
                  <Input value="{/recipient/name}"
                          valueLiveUpdate="true"
                         width="60%"/>
-             <Text text="Hello{/recipient/name}" class="sapUiSmallMargin boldElements sapthemeHighlight-asColor"/>
+             <Text text="Hello {/recipient/name}" class="sapUiSmallMargin boldElements sapthemeHighlight-asColor"/>
       </content>
  </Panel>
  <core:Fragment fragmentName="logaligroup.sapui5.view.Form01" type="XML"/>

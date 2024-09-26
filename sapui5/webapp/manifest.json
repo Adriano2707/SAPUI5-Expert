@@ -116,9 +116,9 @@
                     "name": "Details",
                     "pattern": "details/{invoicePath}",
                     "target": [
-                         "TargetDetails"
-                ]
-            }
+                        "TargetDetails"
+                    ]
+                }
             ],
             "targets": {
                 "TargetOverview": {
@@ -135,13 +135,13 @@
                     "viewId": "Details",
                     "viewName": "Details"
                 }
-            },
-            "rootView": {
-                "viewName": "logaligroup.sapui5.view.App",
-                "type": "XML",
-                "async": true,
-                "id": "App"
             }
+        },
+        "rootView": {
+            "viewName": "logaligroup.sapui5.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "App"
         }
     }
 }

@@ -40,6 +40,13 @@ sap.ui.define([
 
 
                 }
+            },
+
+            onRatingChange: function (oEvent) {
+                const fValue = oEvent.getParameter("value");
+                const oResourceBundle = this.getView().getModel("i18n").getResourceBundle();
+
+                sap.m.MessageToast.show(oResourceBundle.getText("ratingConfirmation", [fValue]));
             }
 
         });
