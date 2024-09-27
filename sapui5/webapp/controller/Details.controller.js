@@ -17,12 +17,12 @@ sap.ui.define([
         return Controller.extend("logaligroup.sapui5.controller.Details", {
 
             _onObjectMatch: function (oEvent) {
+                this.byId("rating").reset();
                 this.getView().bindElement({
                     path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").invoicePath),
                     model: "northwind"
                 });
-            },
-
+            }, 
             onInit: function () {
                 const oRouter = sap.ui.core.UIComponent.getRouterFor(this);
                 oRouter.getRoute("Details").attachPatternMatched(this._onObjectMatch, this);
@@ -32,7 +32,7 @@ sap.ui.define([
                 const oHistory = History.getInstance();
                 const sPreviousHash = oHistory.getPreviousHash();
 
-                if ($PreviousHash !== undefined) {
+                if (sPreviousHash !== undefined) {
                     window.history.go(-1);
                 } else {
                     const oRouter = UIComponent.getRouterFor(this);

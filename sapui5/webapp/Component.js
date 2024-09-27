@@ -30,6 +30,9 @@ sap.ui.define([
                 // var i18nModel = new ResourceModel({ bundleName: "logaligroup.sapui5.i18n.i18n" });
                 // this.setModel(i18nModel, "i18n");
 
+                //set the device model
+                this.setModel(Models.createDeviceModel(), "device");
+
                 this._helloDialog = new HelloDialog(this.getRootControl());
 
                 //create the views based on the url/hash
